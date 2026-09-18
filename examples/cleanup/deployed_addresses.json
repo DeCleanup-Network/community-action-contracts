@@ -1,5 +1,20 @@
 {
-  "note": "DeCleanup Network production addresses. See decleanup-main-celo repo.",
-  "celo": {},
-  "base": {}
+  "note": "DeCleanup Network production addresses. Canonical source: decleanup-main-celo/contracts/scripts/deployed_addresses.json",
+  "celo": {
+    "chainId": 42220,
+    "Submission": "0x2f3654f0ad8117c41185c589dcd0ea22522fe5af",
+    "DCURewardManager": "0x1936270b066ebadedc2d84f4ce3b488729d1d638",
+    "ImpactProductNFT": "0x97fa526fba91f01b5a4e0f25c71751e474cb6f45",
+    "ClaimVault": "0x4f69a1170c8799b5bc1587275b2e7da5a8406ff0",
+    "CDCUToken": "see frontend NEXT_PUBLIC_CDCU_TOKEN / ClaimVault token()"
+  },
+  "base": {
+    "chainId": 8453,
+    "note": "Populate after Base contracts are pointed at from dapp.decleanup.net (post-governance vote).",
+    "Submission": "",
+    "DCURewardManager": "",
+    "ImpactProductNFT": "",
+    "ClaimVault": "",
+    "BDCUToken": ""
+  }
 }

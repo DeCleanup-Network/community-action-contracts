@@ -45,3 +45,12 @@ Solidity · Hardhat · OpenZeppelin · EIP-712 · ERC-1155 (Hypercerts compatibl
 ## License
 
 MIT
+
+## Implementation note
+
+Solidity filenames in this repo match production DeCleanup Network names:
+
+- `ActionSubmission` → `Submission.sol`
+- `RewardManager` → `DCURewardManager.sol`
+
+See `SOURCE.md` for the full map and upstream link.
