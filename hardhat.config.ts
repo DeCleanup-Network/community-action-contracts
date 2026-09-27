@@ -53,6 +53,11 @@ const config: HardhatUserConfig = {
       accounts: [PRIVATE_KEY],
       chainId: 84532,
     },
+    'robinhoodchain-testnet': {
+      url: process.env.ROBINHOOD_TESTNET_RPC_URL || 'https://rpc.testnet.chain.robinhood.com',
+      accounts: [PRIVATE_KEY],
+      chainId: 46630,
+    },
   },
   etherscan: {
     apiKey: process.env.CELOSCAN_API_KEY || process.env.BASESCAN_API_KEY || '',
@@ -74,6 +79,14 @@ const config: HardhatUserConfig = {
         network: 'base',
         chainId: 8453,
         urls: { apiURL: 'https://api.basescan.org/api', browserURL: 'https://basescan.org' },
+      },
+      {
+        network: 'robinhoodchain-testnet',
+        chainId: 46630,
+        urls: {
+          apiURL: 'https://explorer.testnet.chain.robinhood.com/api',
+          browserURL: 'https://explorer.testnet.chain.robinhood.com',
+        },
       },
     ],
   },
